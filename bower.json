@@ -1,0 +1,12 @@
+{
+  "name": "pat-cms-bbb",
+  "version": "1.0.0",
+  "main": "dist/css/styles.css",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
