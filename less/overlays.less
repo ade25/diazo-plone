@@ -25,14 +25,18 @@ div.overlay-iframe {
 /* default close button positioned on upper-left corner */
 div.overlaybg div.close,
 div.overlay div.close {
+    .square(30px);
     background-image: url(../images/pb_close.png);
     position: absolute;
-    left: -14px;
-    top: -14px;
+    left: (@line-height-computed / 2);
+    top: (@line-height-computed / 2);
     cursor: pointer;
-    height: 30px;
-    width: 30px;
 }
+
+div.overlaybg div.close:after,
+div.overlay div.close:after {
+    content: '\d7';
+} 
 
 .pb-ajax {
     overflow-y: auto;
@@ -81,7 +85,7 @@ div.overlay {
     }
     /* lets play nice with paragraphs, links, tabbed pages in overlay e.g. when plone.openid is installed */
     p {
-        margin-bottom: @line-height-base;
+        margin-bottom: @line-height-computed;
     }
     label {
         margin-bottom: 0.25em;
